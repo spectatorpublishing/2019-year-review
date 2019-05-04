@@ -3,27 +3,30 @@ import styled from "styled-components";
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 
 const Flipcard = styled.div`
+  background-color: transparent;
+  width: 25vw;
+  height: 25vw; 
+
   @media only screen and (max-width: 991px){
     width: 50vw;
     height: 50vw;
-
   }
 
-  @media only screen and (min-width:992px){
-    width: 25vw;
-    height: 25vw; 
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition: transform 0.8s;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.8s;
 
+  @media only screen and (min-width:992px){
     :hover{
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
   	}
   }
 
+  -webkit-transform: rotateY(${props => props.flipped ? "180deg" : "0deg"});
+  transform: rotateY(${props => props.flipped ? "180deg" : "0deg"});
 `;
 
 const Inner = styled.div`
@@ -38,37 +41,20 @@ const Front = styled.div`
   background-image: url(${({front_image}) => front_image});
   background-size: cover;
   position: absolute;
+  backface-visibility: hidden;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden;
   
 `;
 
 const Back = styled.div`
-  @media only screen and (min-width:992px){
-    background-image: url(${({back_image}) => back_image});
-    background-size: cover;
-    color: white;
-    position: absolute;
-    backface-visibility: hidden;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    height: 100%;
-    width: 100%;
-  }
-
-  @media only screen and (max-width: 991px){
-    height: 100vw;
-    width: 100vw;
-    background-image: url(${({back_image}) => back_image});
-    background-size: cover;
-    color: white;
-    position: absolute;
-    backface-visibility: hidden;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  
-  }
+  background-image: url(${({back_image}) => back_image});
+  background-size: cover;
+  color: white;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 
 `;
 
@@ -79,13 +65,6 @@ const FrontAuthor = styled.h1`
   margin-top: 140px;
   font-size: 40px;
   color: white;
-
-  @media only screen and (max-width: 991px){
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-    font-size: 30px;
-  }
   
 `;
 
@@ -129,7 +108,6 @@ const Author = styled.div`
 
 `;
 
-
 class ImageBox extends React.Component {
   constructor(props){
     super(props)
@@ -143,7 +121,6 @@ class ImageBox extends React.Component {
     console.log('flip')
     this.setState({flipped: !this.state.flipped})
   }
-
 
   render(){
     const props = this.props
