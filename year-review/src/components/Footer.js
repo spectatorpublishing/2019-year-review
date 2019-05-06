@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import CDS from '../assets/whitemasthead.png';
 
+const whiteMastHeadSvgUrl = "https://s3.amazonaws.com/year-in-review-assets/whitemasthead.png"
+
+
 const Logo = styled.img`
   display: block;
   margin-left: auto;
@@ -23,7 +26,7 @@ const footer = (props) =>{
     <div className="Footer">
       <Center>
         <p>PRODUCED BY</p>
-        <Logo src={CDS} alt="scroll"/>      
+        <Logo src={whiteMastHeadSvgUrl} alt="scroll"/>      
       </Center>
     </div>
   );

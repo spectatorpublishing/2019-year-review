@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactSVG from 'react-svg'
 import { withRouter } from 'react-router-dom';
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 import styled from 'styled-components';

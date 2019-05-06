@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+// import ReactSVG from 'react-svg'
 import styled from 'styled-components';
 import Background from '../assets/homepg1500x800.png';
 import whitemasthead from '../assets/whitemasthead.png';
 import downarrow from '../assets/white-down-arrow-icon.png';
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
+
+const whiteMastHeadSvgUrl = "https://s3.amazonaws.com/year-in-review-assets/whitemasthead.png"
 
 
 let MobileContainer = styled.div`
@@ -83,6 +86,10 @@ export default class HomePage extends Component {
   constructor(props){
     super(props);
 
+    this.state = {
+      whiteMastHeadSvg: whiteMastHeadSvgUrl
+    };
+
     this.getSections = this.getSections.bind(this);
   }
 
@@ -116,7 +123,10 @@ export default class HomePage extends Component {
 
         <Desktop>
           <LogoDiv href="https://www.columbiaspectator.com/" target="_blank">
-            <SpecLogo src={whitemasthead}/>
+            {/* <ReactSVG 
+              src={this.state.whiteMastHeadSvg} 
+            /> */}
+            <SpecLogo src={this.state.whiteMastHeadSvg}/>
           </LogoDiv>
           <HomePageContainer>
             <LeftDiv>
