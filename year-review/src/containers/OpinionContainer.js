@@ -6,7 +6,7 @@ import ScrollingNavBar from '../components/Navigation/ScrollingNavBar';
 import GenericPanelLayout from './GenericPanelLayout';
 import PageIntro from '../components/PageIntro'
 import EditorLetter from '../components/EditorLetter'
-import Columnists from '../components/Columnists';
+import PhotoGrid from '../components/PhotoGrid';
 
 import { opinion_sections } from '../util/OpinionData'
 import { opinion_data } from '../util/TestData'
@@ -23,13 +23,20 @@ export default class OpinionContainer extends Component {
 
           <ExpandingColumns data = {opinion_sections}/>
           <ScrollingNavBar menuItems={opinion_sections}>
-            {this.props.data.items.map((data, i) => 
-              <GenericPanelLayout key={i} data = {this.props.data.items[i]} />)}
             <div>
-              <h3 style={{color: "white", paddingTop:"5vh"}}>Columnists: Fall 2018</h3>
-              <Columnists data={opinion_data} />)
+              <GenericPanelLayout data={this.props.data.items[0]} />
+            </div>
+            <div style={{height: "100vh"}}>
+              <GenericPanelLayout data={this.props.data.items[1]} />
+            </div>
+            <div style={{height: "100vh"}}>
+              <GenericPanelLayout data={this.props.data.items[2]} />
+            </div>
+            <div>
+              <h3 style={{color: "white"}}>Columnists: Fall 2018</h3>
+              <PhotoGrid data={opinion_data} flip />
               <h3 style={{color: "white"}}>Columnists: Spring 2019</h3>
-              <Columnists data={opinion_data} />)
+              <PhotoGrid data={opinion_data} flip />
             </div>
           </ScrollingNavBar>
       </React.Fragment>

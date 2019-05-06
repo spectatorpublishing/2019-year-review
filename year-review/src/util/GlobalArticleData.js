@@ -989,19 +989,19 @@ const data = {
                     },
                     {
                         "title": "Ninth annual Athena Film Festival brings Alexandria Ocasio-Cortez, Time’s Up leaders to campus ",
-                        "author": "SOPHIE SMYKE, LIZZIE GREEN, AND JASMINE SABADOSA",
+                        "author": "Sophie Smyke, Lizzie Green, and Jasmine Sabadosa",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/03/04/ninth-annual-athena-film-festival-brings-alexandria-ocasio-cortez-times-up-leaders-to-campus/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/N6IIVSBTMJAOZH36RBK62YWVEM.jpg"
                     },
                     {
                         "title": "Author Nana-Ama Danquah discusses depression, racial stereotypes during First Lady of New York’s book club event at Barnard ",
-                        "author": "ISABELA ESPADAS BARROS LEAL ",
+                        "author": "Isabela Espadas Barros Leal ",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/03/04/ninth-annual-athena-film-festival-brings-alexandria-ocasio-cortez-times-up-leaders-to-campus/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/N6IIVSBTMJAOZH36RBK62YWVEM.jpg"
                     },
                     {
                         "title": "Professor Jane Ginsburg reflects on her family history as “On the Basis of Sex” screens at Athena Film Festival ",
-                        "author": "FONDA SHEN",
+                        "author": "Fonda Shen",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/03/05/professor-jane-ginsburg-reflects-on-her-family-history-as-on-the-basis-of-sex-screens-at-athena-film-festival/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/XJ4XEEIR2ZD3BBXBNELP6KSSAE.jpg"
                     }
@@ -1013,31 +1013,31 @@ const data = {
                 "blurb": "While art is seen as an infinitely creative discipline, there can be unforeseen boundaries and technological limitations that hold it back. Many of these limitations were transcended this year like never before, starting with the work of renowned filmmaker and choreographer Yvonne Rainer, this year’s Lida A. Orzeck ’68 Distinguished Artist-in-Residence, who played a key role in the development of postmodern dance. At the Athena Film Festival, Virtual Reality Sessions let festival-goers experience film through VR, joining other fast-growing film industries in shaping the future of cinema. Although Athena only happens once a year, students will now be able to access groundbreaking technology year-round with the opening of Barnard’s Movement Lab, an innovative space for research across several disciplines. In addition, technical spectacles in theater improved dramatically. Colony Collapse, a production by the Barnard Theatre Department, featured a twenty-foot honeycomb made of recycled steel, scrap plywood and used cardboard from Barnard Dining Services. Combined with complex lighting rigs and sound effects, tech took center stage in this production. And while technology can help us push boundaries in the arts, so can visionary leaders. Zehra Naqvi, CC ’21, and her sister Sophia, CC ’23, are redefining what it means to be fashion entrepreneurs, having launched their line of empowering t-shirts at the age of 15 and 13, respectively. ",
                 "articles": [{
                         "title": "In Barnard’s ‘Colony Collapse,’ technical details awe, set a new standard for college theatre ",
-                        "author": "SAMUEL JONES",
+                        "author": "Samuel Jones",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2018/12/10/in-barnards-colony-collapse-technical-details-awe-set-a-new-standard-for-college-theatre/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/YOTDTVZCIZCPTCCZ4UYWQWT3JQ.jpg"
                     },
                     {
                         "title": "MacArthur Fellowship-winning filmmaker and choreographer Yvonne Rainer never intended for her work to change the world ",
-                        "author": "GIA KIM",
+                        "author": "Gia Kim",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/04/25/macarthur-fellowship-winning-filmmaker-and-choreographer-yvonne-rainer-never-intended-for-her-work-to-change-the-world/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/SRZ4GH65DNF4NBIE7XK3QHKWME.jpg"
                     },
                     {
                         "title": "Cutting-edge tech takes center stage at Athena Film Festival with VR exhibit and film technology panel ",
-                        "author": "LEE ALEXANDER AND JESSE MARTINEZ-KRAT",
+                        "author": "Lee Alexander and Jesse Martinez-Krat",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/03/06/cutting-edge-tech-takes-center-stage-at-athena-film-festival-with-vr-exhibit-and-film-technology-panel/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EJAMETK2JRAGVB26IBARP6O6BY.jpg"
                     },
                     {
                         "title": "Columbia sisters Zehra and Sophia Naqvi empower underrepresented communities with entrepreneurial fashion label GLO ",
-                        "author": "ESTERAH BROWN",
+                        "author": "Esterah Brown",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/04/25/columbia-sisters-zehra-and-sophia-naqvi-empower-underrepresented-communities-with-entrepreneurial-fashion-label-glo/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EF2H3AUDTFC6JMB7QAEMDADQKA.jpg"
                     },
                     {
                         "title": "Barnard’s Movement Lab is a groundbreaking research space, but it’s still finding its identity ",
-                        "author": "ISABELA ESPADAS BARROS LEAL AND EVE WASHINGTON",
+                        "author": "Isabela Espadas Barros Leal and Eve Washington",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/03/06/cutting-edge-tech-takes-center-stage-at-athena-film-festival-with-vr-exhibit-and-film-technology-panel/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EJAMETK2JRAGVB26IBARP6O6BY.jpg"
                     }
@@ -1049,31 +1049,31 @@ const data = {
                 "blurb": "The definition of the arts at Columbia, which has historically revolved around the Western canon, is being expanded, diversified, and critiqued by exhibitions, performances, and panels. “Posing Modernity” opened at the Wallach Gallery before moving to the Musée d’Orsay in Paris. Faculty gathered to talk about arts restitution both in the United States and in France, and the CEO of Gucci attempted to explain away the fashion brand’s blackface scandal. Black femme artists took the spotlight at Bold, Beautiful, Black, at Barnard. And a Columbia professor joined New York’s Heartbeat Opera to use an elitist art form to advocate for justice. ",
                 "articles": [{
                         "title": "“Posing Modernity” at Wallach gallery reimagines the black female historical narrative",
-                        "author": "RUBA NADAR AND ESTERAH BROWN",
+                        "author": "Ruba Nadar and Esterah Brown",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2018/11/02/posing-modernity-at-wallach-gallery-reimagines-the-black-female-historical-narrative/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/L6I6GG2RFZGQVE4KIVQNXVUVJI.jpg"
                     },
                     {
                         "title": "90,000 works of African art reside in France. The Art, Theft and Restitution roundtable opened up a debate on museums’ colonial plunders  ",
-                        "author": "ALEJANDRA QUINTANA",
+                        "author": "Alejandra Quintana",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/04/09/90000-works-of-african-art-reside-in-france-the-art-theft-and-restitution-roundtable-opened-up-a-debate-on-museums-colonial-plunders/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/BQ2KMSRHFFF6TIVA5DW53AFB2U.jpg"
                     },
                     {
                         "title": "Gucci CEO addresses company’s blackface scandal, institutional diversity in fashion at Columbia event ",
-                        "author": "HENRY MAGOWAN",
+                        "author": "Henry Magowan",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/02/18/gucci-ceo-addresses-companys-blackface-scandal-institutional-diversity-in-fashion-at-columbia-event/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/3FCPDGCKBNCERLBLOLENIIHBQY.jpg"
                     },
                     {
                         "title": "Art exhibition “Redefining the Center” makes the black femme artist the alpha and omega of the art canon ",
-                        "author": "SAMUEL JONES",
+                        "author": "Samuel Jones",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/04/01/art-exhibition-redefining-the-center-makes-the-black-femme-artist-the-alpha-and-omega-of-the-art-canon/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/PF7YKDVHW5D25FSAUAJKVODEFE.jpg"
                     },
                     {
                         "title": "Heartbeat Opera advocates for criminal and social justice reform with ‘Fidelio’ adaptation ",
-                        "author": "FONDA SHEN",
+                        "author": "Fonda Shen",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2018/12/03/heartbeat-opera-advocates-for-criminal-and-social-justice-reform-with-fidelio-adaptation/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/TPILWJ2Y25D5VNC74VN4YQAJ3Y.jpg"
                     }
@@ -1085,31 +1085,31 @@ const data = {
                 "blurb": "The Morningside Heights community saw new eateries and drinkeries popped up around campus, replacing old favorites. Former restaurant Artopolis, formerly known for its flatbread and wines, transformed into The New York Basics, a patisserie and breakfast café. While the owners remain the same, the interior and menu saw a complete rehaul that looks to target a new market. Amigos, Mexican restaurant and location of the famous $20 bottomless margaritas, became e’s BAR, a board game and retro watering hole that serves diner-style foods. As replacements seemed to dominate  the Columbia food scene, a Joe Coffee’s sprung up in the Journalism School where  UP used to be, marking the franchise’s third location in Morningside Heights.",
                 "articles": [{
                         "title": "Artopolis owners go back to Basics to target new market ",
-                        "author": "GIA KIM",
+                        "author": "Gia Kim",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/01/29/artopolis-owners-go-back-to-basics-to-target-new-market/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/XPVLZOZBYBEGROL4CWRGIOCJGU.jpg"
                     },
                     {
                         "title": "Artopolis renamed The New York Basics, unveils revamped menu, refurbished interior ",
-                        "author": "ISABELA ESPADAS BARROS LEAL",
+                        "author": "Isabela Espadas Barros Leal",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2019/01/23/artopolis-renamed-the-new-york-basics-unveils-revamped-menu-refurbished/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/DCWWAAC4S5DN7IWF3QAH2PRJUA.jpg"
                     },
                     {
                         "title": "A first look at e’s Bar, the pub replacing Amigo’s on Broadway",
-                        "author": "ISABELA ESPADAS BARROS LEAL",
+                        "author": "Isabela Espadas Barros Leal",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2018/08/27/a-first-look-at-es-bar-the-pub-replacing-amigos-on-broadway/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/U46GOYVXWRAVNJACGJ77CXNW2I.jpg"
                     },
                     {
                         "title": "E’s Bar officially opened for business",
-                        "author": "SAMUEL JONES",
+                        "author": "Samuel Jones",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2018/10/23/es-bar-has-officially-opened-for-business/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EMZUOUXQQFAXDCVQBG43KEVT3U.jpg"
                     },
                     {
                         "title": "Up Coffee replaced by campus’ third Joe Coffee location ",
-                        "author": "SARAH BECKLEY",
+                        "author": "Sarah Beckley",
                         "link": "https://www.columbiaspectator.com/arts-and-entertainment/2018/09/06/up-coffee-replaced-by-campus-third-joe-coffee-location/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/T3KICP7M7BDDJGG47R4FBAELNI.jpg"
                     }
@@ -1450,25 +1450,25 @@ const data = {
                 "blurb": "Our bimonthly platform in which a small group of contributors to engage with important questions and issues relevant to campus life. Over the past year, contributors have reckoned with questions of sexual assault, wealth disparity, Columbia’s stress culture, and the role of the University Senate. ",
                 "articles": [{
                         "title": "Discourse & Debate: How do Columbia’s wealth demographics affect student life?",
-                        "author": "UFON UMANAH, JEREMY MACK, TIFFANY DIMM, JIMMY QUINN, AND TOVA RICARDO",
+                        "author": "Ufon Umanah, Jeremy Mack, Tiffany Dimm, Jimmy Quinn, and Tova Ricardo",
                         "link": "https://www.columbiaspectator.com/opinion/2018/10/16/discourse-debate-how-do-columbias-wealth-demographics-affect-student-life/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/37AU2HRPVNCLBMZRSFEUCDDLFU.jpg"
                     },
                     {
                         "title": "Discourse & Debate: Should Columbia ban Greek life?",
-                        "author": "UFON UMANAH, JEREMY MACK, TIFFANY DIMM, JIMMY QUINN, AND TOVA RICARDO",
+                        "author": "Ufon Umanah, Jeremy Mack, Tiffany Dimm, Jimmy Quinn, and Tova Ricardo",
                         "link": "https://www.columbiaspectator.com/opinion/2018/11/13/discourse-debate-should-columbia-ban-greek-life/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/AEZERD6VIVBHFHILHT7BZFJ3IA.jpg"
                     },
                     {
                         "title": "Discourse & Debate: Whose responsibility is it to facilitate conversations on sensitive topics in the classroom?",
-                        "author": "JEMIMA FREGENE, KAYLA ABRAMS, AND LANA AWADALLAH",
+                        "author": "Jemima Fregene, Kayla Abrams, and Lana Awadallah",
                         "link": "https://www.columbiaspectator.com/main/2019/02/20/discourse-and-debate-whose-responsibility-is-it-to-facilitate-conversations-on-sensitive-topics-in-the-classroom/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/DAPH72GR3NHM3AQSFJVDQAI26U.jpg"
                     },
                     {
                         "title": "Discourse & Debate: How neurodiverse is Columbia?",
-                        "author": "JEMIMA FREGENE, KAYLA ABRAMS, AND LANA AWADALLAH",
+                        "author": "Jemima Fregene, Kayla Abrams, and Lana Awadallah",
                         "link": "https://www.columbiaspectator.com/opinion/2019/04/24/discourse-and-debate-how-neurodiverse-is-columbia/",
                         "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/X7QCLFKGAJBNBOZHNP2F5QKGL4.png"
                     }
@@ -1750,13 +1750,13 @@ const data = {
             "blurb": "",
             "articles": [{
                     "title": "MTA transit fares are set to increase as 5 percent bonus is eliminated. Here’s why.",
-                    "author": "ISABEL WONG AND RAEEDAH WAHID",
+                    "author": "Isabel Wong and Raeedah Wahid",
                     "link": "https://www.columbiaspectator.com/data-visualization/2019/03/14/mta-transit-fares-are-set-to-increase-as-5-percent-bonus-is-eliminated-heres-why/",
                     "img": "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/3343P2RSSNDU3DXQERBFNTLIKI.jpg"
                 },
                 {
                     "title": "Lower-income undergraduate students are paying more and more to attend Columbia; wealthier students are paying less and less, federal data shows",
-                    "author": "JASON KAO",
+                    "author": "Jason Kao",
                     "link": "https://www.columbiaspectator.com/news/net-price-inequity/",
                     "img": ""
                 },
@@ -1768,7 +1768,7 @@ const data = {
                 },
                 {
                     "title": "In Certain Science and Engineering Fields, Sex Diversity Among Graduate Students Is Stagnating. In Others, It’s Getting Worse.",
-                    "author": "JASON KAO",
+                    "author": "Jason Kao",
                     "link": "https://www.columbiaspectator.com/eye-lead/graduate-sex-diversity/",
                     "img": ""
                 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Mobile, Desktop } from 'react-responsive-simple';
+
 
 let LetterContain = styled.div`
   height: 150vh;
@@ -10,6 +12,16 @@ let LetterContain = styled.div`
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+`
+
+let MobileContain = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
 `
 
 let TempLetter = styled.h1`
@@ -26,6 +38,17 @@ let TempLetter = styled.h1`
   position: relative;
 `
 
+let MobileLetter = styled.h3`
+    display: flex;
+    padding: 15px;
+    margin-top: 0.8rem;
+    text-align: center;
+    color: ${props => props.theme.white};
+    background-color: ${props => props.theme.indigo};
+
+    
+`
+
 const TitleBlurb = styled.p`
   font-size: .9em;
   font-weight: 25;
@@ -40,19 +63,34 @@ const TitleBlurb = styled.p`
   white-space: pre-line;
 `;
 
+const MobileBlurb = styled.p`
+  font-size: 0.7rem;
+  color: white;
+  white-space: pre-line;
+  padding: 15px;
+
+`
+
 class EditorLetter extends Component {
 
   constructor() {
-      super()
+    super()
   }
 
   render() {
     return (
       <React.Fragment>
-        <LetterContain> 
+        <Desktop>
+          <LetterContain>
             <TempLetter> LETTER FROM THE EDITOR </TempLetter>
             <TitleBlurb>{this.props.letter}</TitleBlurb>
-        </LetterContain>
+          </LetterContain>
+        </Desktop>
+        <Mobile><MobileContain>
+        </MobileContain>
+          <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
+          <MobileBlurb>{this.props.letter}</MobileBlurb>
+        </Mobile>
       </React.Fragment>
     );
   }

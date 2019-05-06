@@ -44,14 +44,16 @@ const Contain = styled.div`
 	transform: translate(${({translateValue}) => translateValue}vw);
 `;
 
-const Column = styled.div`
+const Column = styled.a`
 	display: flex;
 	width: 25vw;
 	height: 75vh;
 	background-size: cover;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(${({img_src}) => img_src});
 	text-align: center;
-  background-position: center;
+    background-position: center;
+	text-decoration: none;
+	color: black;
 `;
 
 const Title = styled.h4`
@@ -63,6 +65,8 @@ const Title = styled.h4`
 	top: 20%;
 	color: white;
 `;
+
+
 
 class SpectrumSlider extends Component{
 	constructor(props) {
@@ -102,8 +106,8 @@ class SpectrumSlider extends Component{
 	render(){
 		const grid = this.props.data.map((data, i) => {
 			return (
-			<Column img_src={data.img} key={i} index={i} 
-				onClick = {() => this.handleClick(data.link)}>
+			<Column href={data.link} target="_blank"  img_src={data.img} key={i} index={i} 
+				onClick = {() => console.log("hi")}>
 					<Title>{data.title}</Title>
 			</Column>
 			)

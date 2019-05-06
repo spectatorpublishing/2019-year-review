@@ -11,6 +11,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   postion: relative;
+  
 `
 
 const TopContainer = styled.div`
@@ -18,11 +19,12 @@ const TopContainer = styled.div`
   height: ${props => props.isMobile? '40vh' : '60vh'};
   float: top;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${({img_src}) => img_src});
+  background-position: center;
 `
 
 const BottomContainer = styled.div`
 	width: 100vw;
-	height: ${props => props.isMobile? '60vh' : '40vh'};
+	height: ${props => props.isMobile? '70vh' : '40vh'};
 	float: bottom;
   background-color: ${props => props.theme.indigo};
 `
@@ -84,7 +86,7 @@ export default class GenericPanelLayout extends Component {
 
   render() {
     return (
-      [
+      <React.Fragment>
       <MobileAndTablet>
         <TopContainer img_src = {this.props.data.img} isMobile = {this.state.isMobile} />
 
@@ -92,7 +94,7 @@ export default class GenericPanelLayout extends Component {
           <MobileHead>{this.props.data.name}</MobileHead>
           <ImageBoxSlider data = {this.props.data.articles}/>
         </BottomContainer>
-      </MobileAndTablet>,
+      </MobileAndTablet>
       
       <Desktop>
         <Container>
@@ -100,13 +102,12 @@ export default class GenericPanelLayout extends Component {
               <Head>{this.props.data.name}</Head>
               <Subtitle>{this.props.data.blurb}</Subtitle>
           </TopContainer>
-
           <BottomContainer>
               <ImageBoxSlider data = {this.props.data.articles}/>
           </BottomContainer>
         </Container>
       </Desktop>
-      ]
+      </React.Fragment>
     );
   }
 }

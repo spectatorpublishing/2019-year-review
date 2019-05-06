@@ -7,10 +7,10 @@ import { GlobalStyles, Theme } from "./util/GlobalStyles";
 
 import HomeContainer from './containers/HomeContainer'
 import NewsContainer from './containers/NewsContainer'
-import PhotoContainer from './containers/PhotoContainer'
 import OpinionContainer from './containers/OpinionContainer'
 import SportsContainer from './containers/SportsContainer'
 import EyeContainer from './containers/EyeContainer'
+import PhotoContainer from './containers/PhotoContainer'
 import DesignContainer from './containers/DesignContainer'
 import AEContainer from './containers/AEContainer'
 import SpectrumContainer from './containers/SpectrumContainer'

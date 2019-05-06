@@ -12,7 +12,7 @@ export const opinion_sections = [
 	},
 	{
 		img_src: "https://images.unsplash.com/photo-1520634996521-d0985c84316a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1498&q=80",
-		name: "Discourse and Debate",
+		name: "Discourse & Debate",
 		link: "#discourse-and-debate"
 	},
 	{

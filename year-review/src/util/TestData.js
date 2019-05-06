@@ -232,7 +232,7 @@ export const news_data =
 					img_src: test_img
 				},
 				{
-					title: "Racist harassment, anti-Semitic graffiti incite discussion of campus safety for students of colortitle: Racist harassment, anti-Semitic graffiti incite discussion of campus safety for students of color",
+					title: "Racist harassment, anti-Semitic graffiti incite discussion of campus safety for students of color",
 					description: "After Columbia University College Republicans invited white nationalist speakers Mike Cernovich and Tommy Robinson to campus, hundreds of students reacted with outrage and organized protests, rallies, and marches against the speakers",
 					author: "Author 2",
 					url: test_url,

@@ -38,7 +38,7 @@ let LightboxMobileContainer = styled(FullScreenContainer)`
 let PreviewContainer = styled.div`
   background: ${props => props.theme.indigo};
   height: 100%;
-  width: 70%;
+  width: 75%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -59,7 +59,7 @@ let Image = styled.img`
   object-fit: contain;
 `
 let CaptionContainer = styled.div`
-  width: 30%;
+  width: 25%;
   padding: 0 5%;
   background: rgba(34,36,48,0.8);
 `
@@ -82,19 +82,20 @@ let CloseButton = styled(Cross)`
   }
 `
 let TitleContainer = styled.div`
-  height: 70%;
+  height: 50%;
+  margin-top: 40%;
   overflow-y: scroll;
 `
 let ArticleLink = styled.a`
   color: ${props => props.theme.blue};
   text-decoration: none;
 `
-let Title = styled.h3`
+let Title = styled.h4`
   color: ${props => props.theme.white};
   text-transform: uppercase;
-  height: 25vh;
+  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   &:hover {
     color: ${props => props.theme.blue};
@@ -109,7 +110,7 @@ let Description = styled.p`
 let CreditContainer = styled.div`
   height: 15%;
 `
-let Credit = styled.h4`
+let Credit = styled.h5`
   color: ${props => props.theme.white};
   text-transform: capitalize;
 `
@@ -193,8 +194,9 @@ class Lightbox extends Component {
   }
 
   render() {
+    let title = this.props.media[this.state.index].title;
     let description = this.props.media[this.state.index].description;
-    let articleUrl = this.props.media[this.state.index].url;
+    let articleUrl = this.props.media[this.state.index].link;
     return (
       <FullScreenContainer>
         <MobileAndTablet>
@@ -202,16 +204,12 @@ class Lightbox extends Component {
             <CloseContainerMobile>
               <CloseButton onClick={this.props.onClose} />
             </CloseContainerMobile>
-
-            <ArticleLink href={articleUrl} target="_blank">
-              <TitleMobile>{this.props.media[this.state.index].title}</TitleMobile>
-            </ArticleLink>
-
+            
             <PreviewContainerMobile>
               <LeftArrow onClick={this.handleLeftArrowClick} />
               <ImageContainer>
                 <Image 
-                  src={this.props.media[this.state.index].imgUrl}
+                  src={this.props.media[this.state.index].front_image}
                   altText={this.props.media[this.state.index].altText}
                 >
                 </Image>
@@ -219,7 +217,14 @@ class Lightbox extends Component {
               <RightArrow onClick={this.handleRightArrowClick} />
             </PreviewContainerMobile>
 
+            { title &&
+            <ArticleLink href={articleUrl} target="_blank">
+              <TitleMobile>{title}</TitleMobile>
+            </ArticleLink>
+            }
+            { description &&
             <Description>{this.getShortenedCaption(description, articleUrl, 100)}</Description>
+            }
 
             <CreditContainer>
               <Credit>{this.props.authorLabel}: {this.props.media[this.state.index].author}</Credit>
@@ -228,12 +233,12 @@ class Lightbox extends Component {
         </MobileAndTablet>
 
         <Desktop>
-          <LightboxContainer imageUrl={this.props.media[this.state.index].imgUrl}>
+          <LightboxContainer imageUrl={this.props.media[this.state.index].front_image}>
             <PreviewContainer>
               <LeftArrow onClick={this.handleLeftArrowClick} />
               <ImageContainer>
                 <Image 
-                  src={this.props.media[this.state.index].imgUrl}
+                  src={this.props.media[this.state.index].front_image}
                   altText={this.props.media[this.state.index].altText}
                 >
                 </Image>
@@ -247,10 +252,14 @@ class Lightbox extends Component {
               </CloseContainer>
 
               <TitleContainer>
+                { title &&
                 <ArticleLink href={articleUrl} target="_blank">
                   <Title>{this.props.media[this.state.index].title}</Title>
                 </ArticleLink>
+                }
+                { description &&
                 <Description>{this.getShortenedCaption(description, articleUrl, 400)}</Description>
+                }
               </TitleContainer>
 
               <CreditContainer>
