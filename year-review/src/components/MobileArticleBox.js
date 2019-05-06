@@ -2,13 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import read_more from '../assets/hamburger.svg'
 
+const hamburgUrl = "https://s3.amazonaws.com/year-in-review-assets/hamburger.svg"
+
 const Article = styled.div`
   position: absolute; 
   height: 100vh;
   text-align: left;
   align-items: center;
   top: 30%;
-  left: ${props => props.left}vw;
+  left: ${props => props.left}vw;ha
 `
 const Title = styled.h4`
   width: 60vw;
@@ -46,7 +48,7 @@ const article = (props) =>{
       <Title>{props.title}</Title>
       <Author>BY {props.author.toUpperCase()}</Author>
       <Description>{props.description}</Description>
-      <Link href={props.url}><Logo src={read_more} alt="readmore"/> </Link>     
+      <Link href={props.url}><Logo src={hamburgUrl} alt="readmore"/> </Link>     
     </Article>
   );
 }

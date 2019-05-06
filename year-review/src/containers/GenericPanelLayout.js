@@ -5,6 +5,8 @@ import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 import ImageBoxSlider from './ImageBoxSlider';
 import scrollArrow from '../assets/hamburger.svg'
 
+const hamburgUrl = "https://s3.amazonaws.com/year-in-review-assets/hamburger.svg"
+
 const mobileSize = 992
 
 const Container = styled.div`

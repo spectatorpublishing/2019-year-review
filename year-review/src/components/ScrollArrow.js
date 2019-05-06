@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components'
 import arrow from '../assets/hamburger.svg'
 
+const hamburgUrl = "https://s3.amazonaws.com/year-in-review-assets/hamburger.svg"
+
 const Arrow = styled.img`
   width: 2vw;
   &:hover {
@@ -17,7 +19,7 @@ const handleClick = () => {
 }
 
 const scrollArrow = () =>{
-  return <Arrow src={arrow} onClick = {handleClick}/>
+  return <Arrow src={hamburgUrl} onClick = {handleClick}/>
 }
 
 export default scrollArrow

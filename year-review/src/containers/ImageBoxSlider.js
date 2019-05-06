@@ -11,6 +11,10 @@ import black_arrow from '../assets/left_arrow.svg'
 import filledCircle from '../assets/filledCircle.svg'
 import emptyCircle from '../assets/emptyCircle.svg'
 
+const rightArrowSvgUrl = "https://s3.amazonaws.com/year-in-review-assets/right_arrow.svg"
+const filledCircleSvgUrl = "https://s3.amazonaws.com/year-in-review-assets/filledCircle.svg"
+const emptyCircleSvgUrl = "https://s3.amazonaws.com/year-in-review-assets/emptyCircle.svg"
+
 
 const n = 2
 
@@ -160,8 +164,8 @@ class ImageBoxSlider extends Component {
 				onClick = {() => this.props.handleClick(i)} url={data.link}
 				img_src={data.img} key = {i}/>)
 
-		let leftArrow = <Arrow src={white_arrow} onClick={this.onLeft} left/> 
-		let rightArrow = <Arrow src={white_arrow} onClick={this.onRight}/> 
+		let leftArrow = <Arrow src={rightArrowSvgUrl} onClick={this.onLeft} left/> 
+		let rightArrow = <Arrow src={rightArrowSvgUrl} onClick={this.onRight}/> 
 
 		if (this.state.isMobile){
 			boxes = this.props.data.map ( (data,i) => {
@@ -185,9 +189,9 @@ class ImageBoxSlider extends Component {
 
 		let circles = this.props.data.map ( (_, i) => {
 				if (i===this.state.circle_index)
-					return <Circle src = {filledCircle} onClick={ () => this.onCircle(i)} key={i}/>
+					return <Circle src = {filledCircleSvgUrl} onClick={ () => this.onCircle(i)} key={i}/>
 				else if (i<this.props.data.length/n)
-					return <Circle src = {emptyCircle} onClick={() => this.onCircle(i)} key={i}/>
+					return <Circle src = {emptyCircleSvgUrl} onClick={() => this.onCircle(i)} key={i}/>
 				return null
 			}
 		)

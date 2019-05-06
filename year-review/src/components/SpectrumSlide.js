@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import arrow from '../assets/hamburger.svg'
 import read_more from '../assets/hamburger.svg'
 
+const hamburgUrl = "https://s3.amazonaws.com/year-in-review-assets/hamburger.svg"
+
 const Article = styled.div`
   margin: 0vw;
 `
@@ -53,7 +55,7 @@ const slide = (props) =>{
         <Image {...props}>
             <Title>{props.title}</Title>
             <Arrow src={arrow} onClick = {handleClick}/>
-            <Link href={props.url}><Logo src={read_more} alt="readmore"/> </Link>
+            <Link href={props.url}><Logo src={hamburgUrl} alt="readmore"/> </Link>
         </Image>
     </Article>
   );
