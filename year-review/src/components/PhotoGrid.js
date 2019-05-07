@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
+import LazyLoad from 'react-lazy-load';
+
 
 const Flipcard = styled.div`
   @media only screen and (max-width: 991px){
@@ -198,7 +200,7 @@ const ArticleLink = styled.a`
 const ImageBox = (props) => {
   return (
       <Flipcard flip={props.flip}>
-        <Inner className="inner">
+        <LazyLoad debounce = {false} throttle = {250}><Inner className="inner">
           {props.flip ? (
           <React.Fragment>
             <Front {...props.data}>
@@ -218,7 +220,7 @@ const ImageBox = (props) => {
               <CardAuthor>By {props.data.author}</CardAuthor>
             </Card>
           )}
-        </Inner>
+        </Inner></LazyLoad>
       </Flipcard>
   )
 }
