@@ -20,7 +20,7 @@ let LetterContain = styled.div`
   position: relative;
   padding-top: 15px;
   padding-bottom: 30px;
-  background-color: ${props => props.theme.blue};
+  background-color: ${props => props.theme.indigo};
 `
 
 let MobileContain = styled.div`

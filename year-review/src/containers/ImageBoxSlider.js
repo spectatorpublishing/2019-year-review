@@ -3,10 +3,8 @@ import styled from 'styled-components'
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 
 import Article from '../components/ArticleBox'
-import MobileArticleBox from '../components/MobileArticleBox'
 
 import white_arrow from '../assets/right_arrow.svg'
-import black_arrow from '../assets/left_arrow.svg'
 import filledCircle from '../assets/filledCircleWhite.svg'
 import emptyCircle from '../assets/emptyCircleWhite.svg'
 

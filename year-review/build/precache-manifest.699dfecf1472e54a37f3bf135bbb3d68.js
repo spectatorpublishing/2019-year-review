@@ -36,10 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hamburger.2090abf7.svg"
   },
   {
-    "revision": "0414660e20994efdabffe90d79165153",
-    "url": "/static/media/homepg1500x800.0414660e.png"
-  },
-  {
     "revision": "9459b9670849bbf801167ea153d9022e",
     "url": "/static/media/left_arrow.9459b967.svg"
   },
