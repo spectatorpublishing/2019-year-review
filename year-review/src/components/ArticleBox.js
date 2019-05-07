@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
+import LazyLoad from 'react-lazy-load';
 
 
 const Article = styled.div`
@@ -92,13 +93,13 @@ const articlebox = (props) => {
         <React.Fragment>
             <Desktop>
                 <Article>
-                    <Container href={props.url} target="_blank">
+                <LazyLoad debounce = {false} throttle = {250}><Container href={props.url} target="_blank">
                         <Image img_src={props.img_src}></Image>
                         <Text>
                             <Title>{props.title}</Title>
                             <Desc>{props.author}</Desc>
                         </Text>
-                    </Container>
+                    </Container></LazyLoad>
                 </Article>
             </Desktop>
 
