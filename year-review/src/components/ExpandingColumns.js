@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 import styled from 'styled-components'
 import { NavHashLink } from 'react-router-hash-link';
+import LazyLoad from "react-lazy-load";
 
 
 const Contain = styled.div`
@@ -78,7 +79,7 @@ class ExpandingColumns extends Component {
 	render(){
 		const grid = this.props.data.map((data, i) => {
 			return (
-				<Column img_src={data.img_src} key={i} index={i} 
+				<LazyLoad height={1000} offsetVertical={300} debounce={false} throttle={250}><Column img_src={data.img_src} key={i} index={i} 
 					hover={this.state.hover}
 					onMouseEnter={() => this.onHover(i)}
 					onMouseLeave={this.onStopHover}
@@ -90,7 +91,7 @@ class ExpandingColumns extends Component {
 					<Desktop>
 						<TitleDesktop>{data.name}</TitleDesktop>
 					</Desktop>
-	    		</Column>
+	    		</Column></LazyLoad>
 	    		
     		)
 		});
