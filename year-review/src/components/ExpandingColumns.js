@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import { withRouter } from 'react-router-dom';
 import { MobileAndTablet, Desktop } from 'react-responsive-simple';
 import styled from 'styled-components'
+import { NavHashLink } from 'react-router-hash-link';
+
 
 const Contain = styled.div`
     display: flex;  
@@ -10,7 +12,7 @@ const Contain = styled.div`
   	height: calc(100vh - 48px);
 `;
 
-const Column = styled.a`
+const Column = styled(NavHashLink)`
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -80,7 +82,7 @@ class ExpandingColumns extends Component {
 					hover={this.state.hover}
 					onMouseEnter={() => this.onHover(i)}
 					onMouseLeave={this.onStopHover}
-					onClick={() => this.handleClick(data.link)}
+					to={data.link}
 				>
 					<MobileAndTablet>
 						<TitleMobile>{data.name}</TitleMobile>

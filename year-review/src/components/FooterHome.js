@@ -83,6 +83,7 @@ const footerHome = (props) =>{
             <RoleHeading>&nbsp;</RoleHeading>
             <Line>Wendy Wang, <Role>Developer</Role></Line> 
             <Line>Yunsu Kim, <Role>Developer</Role></Line> 
+            <Line>Daniel Kim, <Role>Developer</Role></Line> 
             <Line>Arsalaan Ansari, <Role>Head of Engineering</Role></Line> 
           </Column>
         </Names>
@@ -108,6 +109,7 @@ const footerHome = (props) =>{
             <RoleHeading>&nbsp;</RoleHeading>
             <Line>Wendy Wang, <Role>Developer</Role></Line> 
             <Line>Yunsu Kim, <Role>Developer</Role></Line> 
+            <Line>Daniel Kim, <Role>Developer</Role></Line> 
             <Line>Arsalaan Ansari, <Role>Head of Engineering</Role></Line> 
           </Column>
         </Names>
@@ -142,6 +144,8 @@ const footerHome = (props) =>{
             <Line>Wendy Wang,</Line> 
             <Role>Developer</Role>
             <Line>Yunsu Kim,</Line> 
+            <Role>Developer</Role>
+            <Line>Daniel Kim,</Line> 
             <Role>Developer</Role>
             <Line>Arsalaan Ansari,</Line> 
             <Role>Head of Engineering</Role>

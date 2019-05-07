@@ -11,8 +11,8 @@ let LetterContain = styled.div`
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 `
 
 let MobileContain = styled.div`
@@ -21,11 +21,9 @@ let MobileContain = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
 `
 
-let TempLetter = styled.h1`
+let TempLetter = styled.h2`
   height: 15%;
   width: 80%;
   max-width: 999px;
@@ -71,6 +69,42 @@ const MobileBlurb = styled.p`
   padding: 15px;
 
 `
+const Role = styled.div`
+ color: ${props => props.theme.transparentWhite};
+ padding-left: 0.5rem;
+
+`;
+const Line = styled.h5`
+   color: ${props => props.theme.white};
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+
+   @media only screen and (max-width: 991px){
+    padding: 15px 15px;
+    font-size: 1em;
+    margin: 0;
+ }
+`;
+const Border = styled.div`
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    width: 69.211px;
+    border-width: 2pt;
+    float: left;
+    @media only screen and (max-width: 991px){
+      padding: 15px 10vw 5px 10vw;
+      margin: 0;
+   }
+`
+const SectionDivider = styled.hr`
+  height: 1px;
+  color: ${props => props.theme.white};
+  background-color: ${props => props.theme.white};
+  border: none;
+`
+
 
 class EditorLetter extends Component {
 
@@ -85,12 +119,17 @@ class EditorLetter extends Component {
           <LetterContain>
             <TempLetter> LETTER FROM THE EDITOR </TempLetter>
             <TitleBlurb>{this.props.letter}</TitleBlurb>
+            <Border><SectionDivider/></Border>
+            <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
           </LetterContain>
         </Desktop>
+
         <MobileAndTablet><MobileContain>
         </MobileContain>
           <MobileLetter>LETTER FROM THE EDITOR</MobileLetter>
           <MobileBlurb>{this.props.letter}</MobileBlurb>
+          
+          <Line>{this.props.author}, <Role>{this.props.role}</Role></Line> 
         </MobileAndTablet>
       </React.Fragment>
     );

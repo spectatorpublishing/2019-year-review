@@ -9,8 +9,12 @@ import EditorLetter from '../components/EditorLetter'
 import PhotoGrid from '../components/PhotoGrid';
 import { opinion_sections } from '../util/OpinionData'
 
-const description = "Most undergraduates will only experience a small sliver of Columbia's history during their time here; current students just lived through a year for the record books. As the University marked the fiftieth anniversary of the 1968 protests that redined its identity, campus was roiled by a new series of student protests."
-const img_src = "https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80"
+const letter = "There’s an essay by Joan Didion called “Goodbye to All That” that discusses the transient nature of New York City and her own fleeting place within it. In many ways, Columbia deals with its own unique sense of transience—students coming and going as four years quickly pass by. There is a paradox that exists on this campus that becomes clear when the flowers start blooming and everyone floods to Low Steps after the slightest glimpse of sun.\
+\n\nOur campus begins to come alive at the same moment that we’re meant to leave it.\
+\n\nBecause of this, it’s hard not to reminisce on all that’s happened throughout the whirlwind of the past nine months—what’s been done, seen, and said by those around you. Over the past year you’ve talked about your love lives, your careers, and, of course, your Juul addictions. \
+\n\nWithin the opinion section, students, faculty, professors, and administrators have responded to and written about how Columbia deals with sexual assault, the virulent acts of racism our campus has grappled with, the college admissions scandal, and so much more. Our job is not to report what’s going on, but to give members of this community a chance and a platform to reflect on it. We hope that the following pages, in many ways, help do just that. \
+\n\nSo now, it’s time to say goodbye to all that—for summer at least. "
+
 
 const LogoWrapper = styled.div`
   position: sticky;
@@ -37,7 +41,7 @@ export default class OpinionContainer extends Component {
     return (
       <React.Fragment>
           <PageIntro title="OPINION" description={this.props.data.blurb} img_src={this.props.data.img}/>
-          <EditorLetter/>
+          <EditorLetter letter={letter} author="Kaili Meier and Erin Neil" role="Editorial Page Editors"/>
 
           <ExpandingColumns data = {opinion_sections}/>
           <ScrollingNavBar menuItems={opinion_sections}>
