@@ -5,6 +5,47 @@ import { ReactComponent as ArrowL } from '../assets/left_arrow.svg';
 
 const n=4
 
+const RightArrowContainer = styled.div`
+	position: absolute;
+	top: 50vh;
+	left: 90vw;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	background: rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background 0.25s;
+	:hover {
+		background: rgba(0,0,0,0.6);
+	}
+`
+
+const LeftArrowContainer = styled.div`
+	position: absolute;
+	top: 50vh;
+	left: 5vw;
+	z-index: 5;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	background: rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background 0.25s;
+	:hover {
+		background: rgba(0,0,0,0.6);
+	}
+`
+
 const RightArrow = styled(ArrowR)`
 	
 	& path {
@@ -13,9 +54,6 @@ const RightArrow = styled(ArrowR)`
   &:hover path {
     stroke: ${props => props.theme.white};
 	}
-	position: absolute;
-	top: 50vh;
-	left: 90vw;
 `;
 
 const LeftArrow = styled(ArrowR)`
@@ -26,10 +64,6 @@ const LeftArrow = styled(ArrowR)`
 	&:hover path {
 		stroke: ${props => props.theme.white};
 	}
-	position: absolute;
-	top: 50vh;
-	left: 5vw;
-	z-index: 5;
 `;
 
 const ColumnWrapper = styled.div`
@@ -117,8 +151,8 @@ class SpectrumSlider extends Component{
 			)
 		});
 
-		const leftArrow = this.state.leftDisabled? null: <LeftArrow onClick={this.handleLeftArrowClick} />
-		const rightArrow = this.state.rightDisabled? null: <RightArrow onClick={this.handleRightArrowClick} />
+		const leftArrow = this.state.leftDisabled? null: <LeftArrowContainer onClick={this.handleLeftArrowClick}><LeftArrow/></LeftArrowContainer>
+		const rightArrow = this.state.rightDisabled? null: <RightArrowContainer onClick={this.handleRightArrowClick}><RightArrow/></RightArrowContainer>
 
 		return (
 			<ColumnWrapper>

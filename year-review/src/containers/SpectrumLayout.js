@@ -26,13 +26,21 @@ const BoxPanel = styled.div`
     transition: transform ease-out 0.45s;
 `
 
+const ArrowContainer = styled.div`
+	position: absolute;
+	top: 0;
+	left: ${props => props.left ? "0" : "90vw"};
+	width: 10vw;
+	height: calc(100vh - 48px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+`
+
 const Arrow = styled.img`
-	width: 2vw;
-  	z-index: 1;
+	width: 5vw;
   	transform: ${props => props.left ? "rotate(180deg)" : ""};
-  	position: absolute;
-  	top: 50vh;
-  	left: ${props => props.left ? "3vw" : "97vw"};
 `
 
 const CircleContainer = styled.div`
@@ -169,8 +177,8 @@ class SpectrumLayout extends Component {
 					return <Circle src = {emptyCircle} onClick={() => this.onCircle(i)} key={i}/>
 			}
 		)
-		let leftArrow = this.state.leftDisabled ? null: <Arrow src={white_arrow} onClick={this.onLeft} left/> 
-		let rightArrow = this.state.rightDisabled ? null: <Arrow src={white_arrow} onClick={this.onRight}/> 
+		let leftArrow = this.state.leftDisabled ? null: <ArrowContainer onClick={this.onLeft} left><Arrow src={white_arrow} left/></ArrowContainer>
+		let rightArrow = this.state.rightDisabled ? null: <ArrowContainer onClick={this.onRight}><Arrow src={white_arrow}/></ArrowContainer>
 		// mobile components-finished
 
 		return (
