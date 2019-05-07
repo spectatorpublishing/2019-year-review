@@ -83,7 +83,7 @@ const articlebox = props => {
       <Desktop>
         <Article>
           <Container href={props.url} target="_blank">
-            <LazyLoad offsetVertical={500} debounce={false} throttle={250}>`
+            <LazyLoad offsetVertical={500} debounce={false} throttle={250}>
               <Image img_src={props.img_src} />
             </LazyLoad>
             <Text>
